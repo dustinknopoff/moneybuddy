@@ -1,0 +1,32 @@
+body {
+  width: 200px !important;
+}
+
+.header {
+  background-color: #6fcf97;
+  color: white;
+  font-family: "Helvetica Neue";
+}
+
+.header > h1 {
+  padding-left: 10px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+
+#pricing {
+  padding: 10px;
+}
+
+#pricing > * {
+  padding: 10px;
+}
+
+.check {
+  padding-left: 30px;
+}
