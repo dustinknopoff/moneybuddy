@@ -7,6 +7,6 @@ In it's current iteration, Money Buddy only works on [Amazon](https://www.amazon
 
 1. Go to [chrome://extensions](chrome://extensions) in a chrome based browser.
 2. Turn on `Developer Mode`.
-3. Download this repo (git clone https://github.com/dustinknopoff/moneybuddy.git)
+3. Download this repo (`git clone https://github.com/dustinknopoff/moneybuddy.git`)
 4. Click `load unpacked` and select folder with this repo within.
 5. Go to [Amazon](https://www.amazon.com) and enjoy!
