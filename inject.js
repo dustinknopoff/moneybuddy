@@ -29,13 +29,11 @@ function execute() {
   var bool = false;
   //max = localStorage["maxValue"];
   max = localStorage["maxValue"];
-  console.log(lis.innerHTML);
   Array.from(lis).forEach(li => {
     const nums = li.getElementsByClassName("sx-price-whole");
     Array.from(nums).forEach(num => {
       console.log(num);
       res = num.innerText.replace(/^[, ]+|[, ]+$|[, ]+/g, "").trim();
-      console.log(res);
       if (parseFloat(res) >= parseFloat(max)) {
         li.innerHTML =
           '<div class="injected">' +
