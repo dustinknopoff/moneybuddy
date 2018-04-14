@@ -1,12 +1,16 @@
+document.addEventListener("DOMContentLoaded", () => {
+  execute();
+});
+
 var loc = document.getElementsByClassName("nav-right");
 console.log(loc[0].innerHTML);
 loc[0].innerHTML = "    <div class=\"header\" style=\"background-color: #6fcf97;color:white;font-family:\"Helvetica Neue\"; height:50px;>" +
     "<h6 style=\"padding-left:10px;\">Money Buddy</h6>" +
     "</div>" +
-    "<div id=\"pricing\" style=\"display:flex;flex-direction:column;padding:10px;color:white;\">" +
+    "<div id=\"pricing\" style=\"display:flex;flex-direction:column;padding:10px;color:white;justify-content:center;\">" +
     "Enter a maximum price: $" +
   "<input type=\"text\" id=\"max\">" +
-  "<button id=\"submit\">Enter</button>"+
+  "<button id=\"submit\" style=\"width:60px;\">Enter</button>"+
     "</div>";
 
 document.getElementById("nav-belt").style.height = '60px';
@@ -21,15 +25,18 @@ function setValue() {
 }
 
 function execute() {
-  const lis = document.getElementsByTagName("li");
+  const lis = document.getElementsByTagName("LI");
   var bool = false;
   //max = localStorage["maxValue"];
   max = localStorage["maxValue"];
-  console.log(li.innerHTML);
+  console.log(lis.innerHTML);
   Array.from(lis).forEach(li => {
     const nums = li.getElementsByClassName("sx-price-whole");
     Array.from(nums).forEach(num => {
-      if (parseFloat(num.innerText) > parseFloat(max)) {
+      console.log(num);
+      res = num.innerText.replace(/^[, ]+|[, ]+$|[, ]+/g, "").trim();
+      console.log(res);
+      if (parseFloat(res) >= parseFloat(max)) {
         li.innerHTML =
           '<div class="injected">' +
           "<div><h1>You Can't Afford This!</h1></div></div>";
@@ -50,4 +57,7 @@ function execute() {
       });
     }
   });
+  var loc = document.getElementsByClassName("nav-right");
+  loc[0].innerHTML = "";
+  document.getElementById("nav-belt").style.height = '39px';
 }
