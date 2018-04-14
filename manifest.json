@@ -16,7 +16,7 @@
   },
   "content_scripts": [
     {
-      "js": ["index.js"],
+      "js": ["inject.js"],
       "css": ["inject.css"],
       "matches": ["https://www.amazon.com/*"]
     }
