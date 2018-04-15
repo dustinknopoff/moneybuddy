@@ -8,8 +8,7 @@ loc[0].innerHTML = "    <div class=\"header\" style=\"background-color: #6fcf97;
     "<h6 style=\"padding-left:10px;\">Money Buddy</h6>" +
     "</div>" +
     "<div id=\"pricing\" style=\"display:flex;flex-direction:column;padding:10px;color:white;justify-content:center;\">" +
-    "Enter a maximum price: $" +
-  "<input type=\"text\" id=\"max\">" +
+  "<input type=\"text\" id=\"max\" placeholder=\"Enter a maximum price: $\">" +
   "<button id=\"submit\" style=\"width:60px;\">Enter</button>"+
     "</div>";
 
