@@ -4,10 +4,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 var loc = document.getElementsByClassName("nav-right");
 console.log(loc[0].innerHTML);
-loc[0].innerHTML = "    <div class=\"header\" style=\"background-color: #6fcf97;color:white;font-family:\"Helvetica Neue\"; height:50px;>" +
-    "<h6 style=\"padding-left:10px;\">Money Buddy</h6>" +
+loc[0].innerHTML =
+  '    <div class="header" style="background-color: #6fcf97;color:white;font-family:\'Helvetica Neue\';width:200px; display:flex;flex-direction:row;justify-content:space-between;">' +
+  '<h2 style="padding-left:10px;">Money Buddy</h2>' +
+  '<img src=\"https://res.cloudinary.com/dknopoff/image/upload/v1523995211/favicon.png\" style=\"width:40px;height:30px;padding-left:10px;\"/>'+
     "</div>" +
-    "<div id=\"pricing\" style=\"display:flex;flex-direction:column;padding:10px;color:white;justify-content:center;\">" +
+    "<div id=\"pricing\" style=\"display:flex;flex-direction:column;color:white;justify-content:center;width:200px;\">" +
   "<input type=\"text\" id=\"max\" placeholder=\"Enter a maximum price: $\">" +
   "<button id=\"submit\" style=\"width:60px;\">Enter</button>"+
     "</div>";
