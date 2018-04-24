@@ -5,11 +5,15 @@ body {
 .header {
   background-color: #6fcf97;
   color: white;
-  font-family: "Helvetica Neue";
+  font-family: "Futura Medium";
 }
 
 .header > h1 {
   padding-left: 10px;
+}
+
+.header * {
+  font-family: "Futura Medium" !important;
 }
 
 body {

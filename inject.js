@@ -2,13 +2,13 @@ window.onload = execute();
 
 var loc = document.getElementsByClassName("nav-right");
 loc[0].innerHTML =
-  '    <div class="header" style="background-color: #89b14e;color:white;font-family:\'Helvetica Neue\';width:200px; display:flex;flex-direction:row;justify-content:space-between;">' +
+  '    <div class="header" style="background-color: #89b14e;color:white;font-family:\'Futura Medium\';width:200px; display:flex;flex-direction:row;justify-content:space-between;">' +
   '<h2 style="padding-left:10px;">Money Buddy</h2>' +
   '<img src=\"https://res.cloudinary.com/dknopoff/image/upload/v1523995211/favicon.png\" style=\"width:40px;height:30px;padding-left:10px;\"/>'+
     "</div>" +
-    "<div id=\"pricing\" style=\"display:flex;flex-direction:column;color:white;justify-content:center;width:200px;\">" +
-  "<input type=\"text\" id=\"max\" placeholder=\"Enter a maximum price: $\">" +
-  "<button id=\"submit\" style=\"width:60px;\">Enter</button>"+
+    "<div id=\"pricing\" style=\"display:flex;flex-direction:column;color:white;justify-content:center;width:200px;font-family:\'Futura Medium\'\">" +
+  "<input type=\"text\" style=\"border-radius:4px;border-style:none;\" id=\"max\" placeholder=\"Enter a maximum price: $\">" +
+  "<button id=\"submit\" style=\"width:60px;font-family:\'Futura Medium\';margin-left:auto;margin-right:auto;margin-top:3px;\">Enter</button>"+
     "</div>";
 
 document.getElementById("nav-belt").style.height = '60px';
