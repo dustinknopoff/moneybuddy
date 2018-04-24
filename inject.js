@@ -1,11 +1,8 @@
-document.addEventListener("DOMContentLoaded", () => {
-  execute();
-});
+window.onload = execute();
 
 var loc = document.getElementsByClassName("nav-right");
-console.log(loc[0].innerHTML);
 loc[0].innerHTML =
-  '    <div class="header" style="background-color: #6fcf97;color:white;font-family:\'Helvetica Neue\';width:200px; display:flex;flex-direction:row;justify-content:space-between;">' +
+  '    <div class="header" style="background-color: #89b14e;color:white;font-family:\'Helvetica Neue\';width:200px; display:flex;flex-direction:row;justify-content:space-between;">' +
   '<h2 style="padding-left:10px;">Money Buddy</h2>' +
   '<img src=\"https://res.cloudinary.com/dknopoff/image/upload/v1523995211/favicon.png\" style=\"width:40px;height:30px;padding-left:10px;\"/>'+
     "</div>" +
@@ -20,7 +17,6 @@ document.getElementById("submit").addEventListener("click", execute);
 
 function setValue() {
   max = document.getElementById("max").value;
-  console.log(max);
   localStorage["maxValue"] = max;
   //window.location.reload();
 }
@@ -33,7 +29,6 @@ function execute() {
   Array.from(lis).forEach(li => {
     const nums = li.getElementsByClassName("sx-price-whole");
     Array.from(nums).forEach(num => {
-      console.log(num);
       res = num.innerText.replace(/^[, ]+|[, ]+$|[, ]+/g, "").trim();
       if (parseFloat(res) >= parseFloat(max)) {
         li.innerHTML =
