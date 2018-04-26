@@ -54,4 +54,5 @@ function execute(val) {
       });
     }
   });
+  location.reload();
 }  
