@@ -13,7 +13,10 @@ loc[0].innerHTML =
 
 document.getElementById("nav-belt").style.height = '60px';
 document.getElementById("max").addEventListener("keyup", setValue);
-document.getElementById("submit").addEventListener("click", execute);
+document.getElementById("submit").addEventListener("click", () => {
+  execute();
+  location.reload();
+});
 
 function setValue() {
   max = document.getElementById("max").value;
